@@ -1,23 +1,17 @@
 # Ng2-Carnival
 
-[![Build Status](https://travis-ci.org/kishoremallick/ng2-carnival.svg?branch=master)](https://travis-ci.org/kishoremallick/ng2-carnival)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0. This project is in a very early development stage.
 
-## Demo (http://ng2carnival.openkitab.com/)
+## Demo (coming soon)
 
-![alt text](https://github.com/kishoremallick/ng2-carnival/blob/master/snaps/ng2-carnival.PNG)
 
 ## List of features
 
 * Angular 2+
 * Angular CLI
 * Bootstrap 4 CSS Framework
-* Smart Table
-* Forms
-* Editors
-* Charts ([ng2-nvd3]( http://krispo.github.io/ng2-nvd3/))
-* Maps ([Google]( https://angular-maps.com/))
 * Responsive layout
  and many more features coming soon
 
@@ -25,11 +19,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * Install [git](https://git-scm.com/) and [node.js](https://nodejs.org/en/) . if you have installed these tools already then you can ignore this step. Make sure you have latest Node.js and npm in your system.
 * Clone Ng2-Carnival git repository
 
-    `git clone https://github.com/kishoremallick/ng2-carnival.git`
+    `git clone https://github.com/kishoremallick/ng2-quiz.git`
     
 * Install dependencies
 
-    `cd ng2-carnival`
+    `cd ng2-quiz`
     
     `npm install`
 
