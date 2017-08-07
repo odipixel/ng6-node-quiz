@@ -4,6 +4,12 @@
 	<div class="col-lg-3"></div>
 	<div class="col-lg-6">
 	<h2 class="text-center mb-4">NG2-Quiz</h2>
+	<div class="alert alert-warning alert-dismissible" role="alert" *ngIf="loginError">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		<strong>{{loginError}}</strong>
+		</div>
 		<div class="card">
 			<div class="card-block">
 			<h3>Sign In</h3>
@@ -11,19 +17,19 @@
 			 Welcome back ! Please sign in
 			</p>
 			<hr>
-				<form>
+				<form (ngSubmit)="f.form.valid && login()" #f="ngForm">
 					<div class="form-group row">
 						<label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
 						<div class="col-sm-10">
-							<input type="email" class="form-control" id="inputEmail3"
-								placeholder="Email">
+							<input type="text" class="form-control" id="text"  [(ngModel)]="model.username" #username="ngModel"  required 
+								placeholder="User Name" name="username">
 						</div>
 					</div>
 					<div class="form-group row">
 						<label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
 						<div class="col-sm-10">
-							<input type="password" class="form-control" id="inputPassword3"
-								placeholder="Password">
+							<input type="password" class="form-control" id="password"
+								[(ngModel)]="model.password" #password="ngModel" name="password" required placeholder="Password">
 						</div>
 					</div>
 
@@ -39,7 +45,7 @@
 					</div>
 					<div class="form-group row">
 						<div class="offset-sm-2 col-sm-10">
-							<button type="submit" class="btn btn-primary" routerLink="/dashboard/home">Sign in</button>
+							<button type="submit" class="btn btn-primary" >Sign in</button>
 							
 						</div>
 
