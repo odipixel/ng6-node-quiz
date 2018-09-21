@@ -1,4 +1,4 @@
-# Ng2-Quiz
+# ng6-node-quizapp
 
 
 
@@ -9,7 +9,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## List of features
 
-* Angular 2+
+* Angular 6
 * Angular CLI
 * Bootstrap 4 CSS Framework
 * Responsive layout
