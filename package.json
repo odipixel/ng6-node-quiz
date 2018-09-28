@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build && nodemon server.js",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -20,8 +20,13 @@
     "@angular/platform-browser": "^6.1.0",
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
+    "axios": "^0.18.0",
+    "body-parser": "~1.17.2",
     "core-js": "^2.5.4",
+    "cors": "~2.8.3",
     "express": "^4.16.3",
+    "mongodb": "^3.1.6",
+    "request": "^2.88.0",
     "rxjs": "^6.0.0",
     "zone.js": "~0.8.26"
   },
